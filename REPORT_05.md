@@ -1,7 +1,7 @@
 # 第5回　Webエンジニアリング演習　レポート
 ## 学籍番号
 (4724122)
-##　TODO配列のコード
+## TODO配列のコード
 (TODO配列コード
 　const todos = [
     { id: 1, title: "型を復習する", completed: true },
@@ -24,7 +24,7 @@ for (const todo of todos) {
 5: 第5回の内容を見直す [未完了])
 
 
-##　TODOを更新した条件
+## TODOを更新した条件
 (TODOを更新した条件のコード
 for (const todo of todos) {
     if (todo.completed === false) {
