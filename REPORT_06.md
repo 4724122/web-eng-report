@@ -3,6 +3,7 @@
 (4724122)
 ## `Todo`型の定義
 (コード
+
 export type Todo = {
     id: number;
     title: string;
@@ -14,6 +15,7 @@ export type Todo = {
 (関数の引数はなし、戻り値の型はnumber
 
 関数のコード
+
 export async function findTodo(): Promise<number> {
     const currentTodos = await fetchTodos();
     const incompletedTodos = currentTodos.filter(
@@ -24,6 +26,7 @@ export async function findTodo(): Promise<number> {
 )
 ## 未完了件数の実行結果
 (コード「todo-service.ts」
+
 import type { Todo } from "./types.js";
 
 const todos: Todo[] = [
@@ -45,6 +48,7 @@ export async function findTodo(): Promise<number> {
 }
 
 コード「index.ts」
+
 import { fetchTodos, findTodo } from "./todo-service.js";
 
 const loaded = await fetchTodos();
@@ -54,6 +58,7 @@ const found = await findTodo();
 console.log(`未完了件数： ${found}`);
 
 実行結果
+
 @4724122 ➜ /workspaces/web-eng-typescript (class-06-functions) $ pnpm run start
 $ tsx src/index.ts
 [
