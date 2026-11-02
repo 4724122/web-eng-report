@@ -47,6 +47,7 @@ export async function findTodo(): Promise<number> {
     return incompletedTodos.length;
 }
 
+
 コード「index.ts」
 
 import { fetchTodos, findTodo } from "./todo-service.js";
@@ -56,6 +57,7 @@ console.log(loaded);
 
 const found = await findTodo();
 console.log(`未完了件数： ${found}`);
+
 
 実行結果
 
