@@ -12,6 +12,7 @@ export type Todo = {
 )
 ## 未完了件数を返す関数の引数と戻り値の型
 (関数の引数はなし、戻り値の型はnumber
+
 関数のコード
 export async function findTodo(): Promise<number> {
     const currentTodos = await fetchTodos();
