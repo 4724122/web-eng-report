@@ -3,7 +3,7 @@
 (4724122)
 ## 2画面の見出しと本文
 (コード
-#compareの表示内容
+#compareの表示内容　→
  if (page === "#compare") {
         app.innerHTML = `
           <h1>画面生成方式の比較</h1>
@@ -12,7 +12,8 @@
 } 
     
 
-#detailの表示内容
+
+#detailの表示内容　→　
 else if (page === "#detail"){
       app.innerHTML = `
         <h1>画面生成方式の詳細</h1>
@@ -32,14 +33,16 @@ https://jubilant-invention-v6j6pxx99vqgfr9-3000.app.github.dev/csr/#compare
 https://jubilant-invention-v6j6pxx99vqgfr9-3000.app.github.dev/csr/#detail
 
 
-Networkの確認
+
+Networkの確認　→
 比較と詳細をクリックしてもNetworkのリストに新しいHTMLなどの行が追加されていないことが確認できた。)
 ## 画面を切り替える処理の要点
-(画面を切り替える処理の要点
+(画面を切り替える処理の要点　→
 addEventListener()というメソッドを使用し、このメソッドの第一引数に”hashchange”を渡すことでURLの＃以降の部分が変更されたタイミングを検知することができる。また第二引数に() => {}という形で処理を記述することでハッシュが変更されるたびに{}の中に書いた処理内容が実行される。さらにlocation.hashで現在のURLの＃以降を取得することで＃以降の値の違いによって表示内容を指定することができる。
 
 
-コード
+
+コード　→
 const app = document.querySelector("#app");
 
 if (app === null) {
