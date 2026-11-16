@@ -19,9 +19,9 @@ export function TodoItem({ todo }: TodoItemProps) {
         <li>
             {todo.dueDate? (
                 new Date(todo.dueDate) < today ? (
-                    <span style={{color: "red"}}> <strong>{todo.title}</strong>期限: {todo.dueDate}</span>
+                    <span style={{color: "red"}}> {todo.completed ? "(完了)" :"(未完了)"}<strong>{todo.title}</strong>期限: {todo.dueDate}</span>
                 ):(
-                    <span> <strong>{todo.title}</strong>期限: {todo.dueDate}</span>
+                    <span> {todo.completed ? "(完了)" :"(未完了)"}<strong>{todo.title}</strong>期限: {todo.dueDate}</span>
                 ) ) : null}
 
         </li>
