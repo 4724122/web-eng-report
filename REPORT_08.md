@@ -31,6 +31,7 @@ export function TodoItem({ todo }: TodoItemProps) {
 
 
 TodoList.tsxのコード　→
+
 import type { Todo } from "../types";
 import { TodoItem } from "./TodoItem";
 
